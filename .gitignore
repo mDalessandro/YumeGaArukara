@@ -1,0 +1,10 @@
+/node_modules/
+/dist/
+/reports/
+/.idea/
+/.vscode/
+
+.env
+bundle-stats.json
+yarn-error.log
+package.lock.json
