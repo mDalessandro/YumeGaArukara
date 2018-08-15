@@ -10,6 +10,7 @@ module.exports = config => {
       'node_modules/babel-polyfill/dist/polyfill.js',
       'test/unit/client/**/*.test.js',
       'test/unit/client/**/*.test.jsx',
+      'test/unit/unitTestUtils.js',
     ],
 
     exclude: ['src/js/index.jsx'],
@@ -17,7 +18,7 @@ module.exports = config => {
     preprocessors: {
       'test/unit/client/**/*.test.js': ['webpack'],
       'test/unit/client/**/*.test.jsx': ['webpack'],
-      'test/unit/client/utils/**/*.js': ['webpack'],
+      'test/unit/unitTestUtils.js': ['webpack'],
     },
 
     quiet: true,
