@@ -16,7 +16,7 @@ module.exports = config => {
     exclude: ['src/js/index.jsx'],
 
     preprocessors: {
-      // 'server/server.js': ['coverage'],
+      // 'src/**/*.js': ['coverage'],
       'test/unit/client/**/*.test.js': ['webpack'],
       'test/unit/client/**/*.test.jsx': ['webpack'],
       'test/unit/unitTestUtils.js': ['webpack'],
