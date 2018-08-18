@@ -1,5 +1,6 @@
 import React from 'react';
+import Content from './Content';
 
-const App = () => <div>Hello Yume!</div>;
+const App = () => <Content>Hello Yume</Content>;
 
 export default App;

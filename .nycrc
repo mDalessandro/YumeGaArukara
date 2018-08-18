@@ -1,0 +1,22 @@
+{
+  "nyc": {
+    "require": [
+      "babel-register"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ],
+    "include": [
+      "src/**/*.js",
+      "src/**/*.jsx"
+    ],
+    "extension": [
+      ".jsx"
+    ],
+    "sourceMap": false,
+    "instrument": false,
+    "report-dir": "./reports/coverage",
+    "extends": "@istanbuljs/nyc-config-babel"
+  }
+}

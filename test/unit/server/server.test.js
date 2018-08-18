@@ -14,7 +14,7 @@ function startServer() {
   });
 }
 
-describe.only('Server:', () => {
+describe('Server:', () => {
   let baseUrl;
   const sandbox = sinon.createSandbox();
 

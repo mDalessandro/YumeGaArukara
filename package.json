@@ -12,6 +12,7 @@
     "build:server:watch": "nodemon --watch server --exec babel-node server/index.js",
     "build:stats": "yarn clean && NODE_ENV=production webpack --config webpack.config.prod.js -p --profile --json ./src/index.jsx > bundle-stats.json && webpack-bundle-analyzer bundle-stats.json dist/public",
     "clean": "rimraf dist",
+    "coverage": "NODE_ENV=test yarn nyc test",
     "dev": "yarn clean && run-p build:server:watch build:client:watch",
     "lint": "eslint --ext .jsx --ext .js .",
     "posttest": "rimraf .nyc_output",
@@ -21,7 +22,7 @@
     "test:unit:client": "karma start",
     "test:unit:client:nowatch": "karma start --single-run --no-watch",
     "test:unit:server": "./node_modules/.bin/nodemon --watch server --watch test/unit/server --exec mocha test/unit/server/**/*.js --compilers js:babel-register",
-    "test:unit:server:nowatch": "NODE_ENV=test nyc mocha test/unit/server/**/*.js --no-watch --compilers js:babel-register"
+    "test:unit:server:nowatch": "mocha test/unit/server/**/*.js --no-watch --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
@@ -99,18 +100,5 @@
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
-  },
-  "nyc": {
-    "require": [
-      "babel-register"
-    ],
-    "reporter": [
-      "html",
-      "text"
-    ],
-    "sourceMap": false,
-    "instrument": false,
-    "report-dir": "./reports/coverage",
-    "extends": "@istanbuljs/nyc-config-babel"
   }
 }
