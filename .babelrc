@@ -5,5 +5,10 @@
   "plugins": [
     "lodash",
     "transform-object-rest-spread"
-  ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [ "istanbul" ]
+    }
+  }
 }

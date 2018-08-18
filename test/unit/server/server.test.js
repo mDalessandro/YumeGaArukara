@@ -32,6 +32,17 @@ describe.only('Server:', () => {
     sandbox.restore();
   });
 
+  describe('when a GET is issued to /health', () => {
+    it('returns a 200 response', done => {
+      fetch(`${baseUrl}/health`, {
+        method: 'GET',
+      }).then(res => {
+        expect(res.status).to.equal(200);
+        done();
+      });
+    });
+  });
+
   describe('when a request is issued for an endpoint that does not exist, ', () => {
     describe('when the request is not a GET request', () => {
       it('returns a 404 response', done => {

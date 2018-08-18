@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 import bodyParser from 'body-parser';
 import express from 'express';
 import helmet from 'helmet';

@@ -16,6 +16,7 @@ module.exports = config => {
     exclude: ['src/js/index.jsx'],
 
     preprocessors: {
+      // 'server/server.js': ['coverage'],
       'test/unit/client/**/*.test.js': ['webpack'],
       'test/unit/client/**/*.test.jsx': ['webpack'],
       'test/unit/unitTestUtils.js': ['webpack'],
@@ -46,11 +47,16 @@ module.exports = config => {
       stats: 'errors-only',
     },
 
-    reporters: ['spec'],
+    reporters: ['spec', 'progress', 'coverage'],
 
     specReporter: {
       showSpecTiming: true,
       suppressSkipped: true,
+    },
+
+    coverageReporter: {
+      type: 'html',
+      dir: 'reports/coverage/',
     },
 
     junitReporter: {
