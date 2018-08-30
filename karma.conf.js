@@ -8,7 +8,6 @@ module.exports = config => {
 
     files: [
       'node_modules/babel-polyfill/dist/polyfill.js',
-      'test/unit/client/**/*.test.js',
       'test/unit/client/**/*.test.jsx',
       'test/unit/unitTestUtils.js',
     ],

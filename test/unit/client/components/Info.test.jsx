@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import React from 'react';
 import { shallow } from 'enzyme';
-import Content from '../../../../src/components/Content';
+import Info from '../../../../src/components/Info';
 import { setupChai, enzymeSetup } from '../../unitTestUtils';
 
 setupChai();
@@ -17,7 +17,7 @@ describe('Content:', () => {
   });
 
   it('renders children', () => {
-    const wrapper = shallow(<Content {...props}>props.children</Content>);
+    const wrapper = shallow(<Info {...props}>props.children</Info>);
 
     expect(wrapper.children()).to.have.length(1);
   });
