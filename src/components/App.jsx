@@ -4,6 +4,8 @@ import Info from './Info';
 import Location from './Location';
 import Hours from './Hours';
 
+import './App.scss';
+
 const App = () => (
   <Content>
     Hello Yume
