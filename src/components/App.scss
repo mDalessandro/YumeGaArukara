@@ -141,7 +141,20 @@ body {
   font-weight: 400;
 }
 
-@media all and (max-width: 768px), (max-height: 630px) {
+.social {
+  position: relative;
+  margin: 0 auto;
+  height: 40px;
+  padding-top: 15px;
+}
+
+.social img {
+  float: none;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+@media all and (max-width: 955px), (max-height: 746px) {
   .content {
     overflow-x: visible;
   }
@@ -181,6 +194,7 @@ body {
 @media all and (max-width: 470px) {
   .hours {
     width: 75%;
+    max-width: 75%;
     line-height: 1.2;
   }
   .hours h2{
@@ -189,5 +203,10 @@ body {
 
   .location {
     font-size: 18px;
+  }
+
+  .social {
+    height: 30px;
+    padding-top: 0;
   }
 }

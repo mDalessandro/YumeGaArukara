@@ -5,6 +5,7 @@ import Info from './Info';
 import Logo from './Logo';
 import Hours from './Hours';
 import Location from './Location';
+import Social from './Social';
 import photoList from '../constants/photoList';
 
 import './App.scss';
@@ -16,6 +17,7 @@ const App = () => (
       <Logo />
       <Hours />
       <Location />
+      <Social />
     </Info>
   </Content>
 );

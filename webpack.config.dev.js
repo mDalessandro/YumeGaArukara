@@ -49,6 +49,9 @@ module.exports = {
     new CopyWebpackPlugin([{ from: './public/yumeColdUdon.jpg', to: './' }]),
     new CopyWebpackPlugin([{ from: './public/yumeHotUdon.jpg', to: './' }]),
     new CopyWebpackPlugin([{ from: './public/yumeJapaneseBlueLogo.png', to: './' }]),
+    new CopyWebpackPlugin([{ from: './public/facebook.png', to: './' }]),
+    new CopyWebpackPlugin([{ from: './public/instagram.png', to: './' }]),
+    new CopyWebpackPlugin([{ from: './public/yelp.png', to: './' }]),
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
