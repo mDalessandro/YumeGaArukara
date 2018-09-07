@@ -8,6 +8,11 @@ const Hours = () => {
   return (
     <div className="hours">
       <h2>Hours</h2>
+      <div id="Sunday" className="dateTime">
+        <div className="day">Sunday</div>
+        <div className="time">Closed</div>
+      </div>
+      <br />
       <div id="Monday" className="dateTime">
         <div className="day">Monday</div>
         <div className="time">Closed</div>
@@ -40,11 +45,6 @@ const Hours = () => {
         <div className="time">{lunchHours}</div>
         <br />
         <div className="time">{dinnerHours}</div>
-      </div>
-      <br />
-      <div id="Sunday" className="dateTime">
-        <div className="day">Sunday</div>
-        <div className="time">Closed</div>
       </div>
     </div>
   );
