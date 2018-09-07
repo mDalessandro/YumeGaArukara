@@ -7,6 +7,10 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const { DefinePlugin } = require('webpack');
 
 module.exports = {
+  output: {
+    path: path.join(__dirname, 'dist/public'),
+    filename: '[name]-[chunkhash].js',
+  },
   module: {
     rules: [
       {
@@ -29,10 +33,6 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
     ],
-  },
-  output: {
-    path: path.join(__dirname, 'dist/public'),
-    filename: '[name]-[chunkhash].js',
   },
   plugins: [
     new HtmlWebpackPlugin({

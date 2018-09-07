@@ -5,6 +5,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: ['babel-polyfill', './src/index.jsx'],
+  output: {
+    path: path.join(__dirname, 'dist/public'),
+    filename: '[name]-[chunkhash].js',
+  },
   module: {
     rules: [
       {
@@ -16,17 +20,21 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|pgn|gif|svg)$/i,
-        loader: 'url-loader?limit=65536',
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8000,
+              name: 'public/[hash]-[name].[ext]',
+            },
+          },
+        ],
       },
       {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
     ],
-  },
-  output: {
-    path: path.join(__dirname, 'dist/public'),
-    filename: '[name]-[chunkhash].js',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -38,6 +46,8 @@ module.exports = {
       filename: '[name]-[contenthash].css',
     }),
     new CopyWebpackPlugin([{ from: './public/favicon.ico', to: './favicon.ico' }]),
+    new CopyWebpackPlugin([{ from: './public/yumeColdUdon.jpg', to: './' }]),
+    new CopyWebpackPlugin([{ from: './public/yumeHotUdon.jpg', to: './' }]),
   ],
   resolve: {
     extensions: ['.js', '.jsx'],

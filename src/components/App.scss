@@ -1,18 +1,167 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// End of reset
+
+body {
+  background: #555555;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  height: 100vh;
+}
+
+.app {
   height: 100%;
-  background: #FFFFFF;
+}
+
+.content{
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .info {
-  width: 50%;
+  position: relative;
+  width: 35%;
   height: 100%;
   float: left;
-  position: relative;
+  text-align: center;
+  background: #555555;
 }
 
 .photos {
-  width: 50%;
+  position: absolute;
+  width: 100%;
   height: 100%;
-  float: left;
+  right: -150px;
+  border-radius: 5px 0 0 5px;
+}
+
+.photo {
+  float: right;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+.hours {
   position: relative;
+  margin: 0 auto;
+  padding: 30px 25px;
+  max-width: 400px;
+  line-height: 1.8;
+}
+
+.hours h2 {
+  margin-top: 0;
+  line-height: 25px;
+  font-size: 22px;
+  border-bottom: 1px solid #dce0d8;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+.dateTime {
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.day {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.time {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.location {
+  position: relative;
+  margin: 0 auto;
+  padding: 30px 25px;
+  line-height: 25px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+@media all and (max-width: 470px) {
+  .hours {
+    width: 75%;
+    line-height: 1.2;
+  }
+  .hours h2{
+    font-size: 20px;
+  }
+
+  .location {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 810px), (max-height: 630px) {
+  .info {
+    float: none;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+
+  .photos {
+    position: absolute;
+    float: none;
+    width: auto;
+    height: auto;
+    right: 0px;
+    max-height: 400px;
+    border-radius: 0;
+    padding-top: 20px;
+    bottom: 0px;
+  }
 }

@@ -1,23 +1,23 @@
 import { expect } from 'chai';
 import React from 'react';
 import { shallow } from 'enzyme';
-import Info from '../../../../src/components/Info';
+import Photos from '../../../../src/components/Photos';
 import { setupChai, enzymeSetup } from '../../unitTestUtils';
 
 setupChai();
 enzymeSetup();
 
-describe('Info:', () => {
+describe('Photos:', () => {
   let props;
 
   beforeEach(() => {
     props = {
-      children: <div />,
+      options: [<img src="fakeImage1" alt="fakeImage1" />, <img src="fakeImage2" alt="fakeImage2" />],
     };
   });
 
-  it('renders children', () => {
-    const wrapper = shallow(<Info {...props}>props.children</Info>);
+  it('renders a single photo', () => {
+    const wrapper = shallow(<Photos {...props} />);
 
     expect(wrapper.children()).to.have.length(1);
   });

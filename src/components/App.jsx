@@ -3,15 +3,17 @@ import Content from './Content';
 import Info from './Info';
 import Location from './Location';
 import Hours from './Hours';
+import Photos from './Photos';
+import photoList from '../constants/photoList';
 
 import './App.scss';
 
 const App = () => (
   <Content>
-    Hello Yume
+    <Photos options={photoList} />
     <Info>
-      <Location />
       <Hours />
+      <Location />
     </Info>
   </Content>
 );
