@@ -45,7 +45,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name]-[contenthash].css',
     }),
-    new CopyWebpackPlugin([{ from: './public/favicon.ico', to: './favicon.ico' }]),
     new CopyWebpackPlugin([{ from: './public/yumeColdUdon.jpg', to: './' }]),
     new CopyWebpackPlugin([{ from: './public/yumeHotUdon.jpg', to: './' }]),
     new CopyWebpackPlugin([{ from: './public/yumeJapaneseBlueLogo.png', to: './' }]),

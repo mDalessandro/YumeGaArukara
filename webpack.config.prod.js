@@ -26,7 +26,15 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|pgn|gif|svg)$/i,
-        loader: 'url-loader?limit=65536',
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8000,
+              name: 'public/[hash]-[name].[ext]',
+            },
+          },
+        ],
       },
       {
         test: /\.scss$/,
@@ -47,7 +55,12 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name]-[contenthash].css',
     }),
-    new CopyWebpackPlugin([{ from: './public/favicon.ico', to: './favicon.ico' }]),
+    new CopyWebpackPlugin([{ from: './public/yumeColdUdon.jpg', to: './' }]),
+    new CopyWebpackPlugin([{ from: './public/yumeHotUdon.jpg', to: './' }]),
+    new CopyWebpackPlugin([{ from: './public/yumeJapaneseBlueLogo.png', to: './' }]),
+    new CopyWebpackPlugin([{ from: './public/facebook.png', to: './' }]),
+    new CopyWebpackPlugin([{ from: './public/instagram.png', to: './' }]),
+    new CopyWebpackPlugin([{ from: './public/yelp.png', to: './' }]),
     new DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
