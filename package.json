@@ -17,6 +17,7 @@
     "lint": "eslint --ext .jsx --ext .js .",
     "posttest": "rimraf .nyc_output",
     "start": "node dist/index.js",
+    "start:cron": "pm2 start dist/index.js",
     "test": "run-s lint test:unit",
     "test:unit": "run-s test:unit:client:nowatch test:unit:server:nowatch",
     "test:unit:client": "karma start",
