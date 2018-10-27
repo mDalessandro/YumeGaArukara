@@ -47,7 +47,7 @@ table {
 body {
   background: #555555;
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #FFFFFF;
   height: 100vh;
 }
 
@@ -155,7 +155,8 @@ body {
 }
 
 .email-address {
-  margin-top: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 @media all and (max-width: 955px), (max-height: 746px) {
