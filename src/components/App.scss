@@ -154,6 +154,10 @@ body {
   margin-left: 10px;
 }
 
+.email-address {
+  margin-top: 15px;
+}
+
 @media all and (max-width: 955px), (max-height: 746px) {
   .content {
     overflow-x: visible;
@@ -184,10 +188,28 @@ body {
 
   .hours {
     max-width: 40%;
+    font-size: 14px;
+  }
+
+  .day {
+    max-height: 20px;
+  }
+
+  .time {
+    max-height: 20px;
   }
 
   .location {
-    font-size: 20px;
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+
+  .social {
+    padding-top: 5px;
+  }
+
+  .email-address {
+    margin-top: 10px;
   }
 }
 
@@ -199,10 +221,6 @@ body {
   }
   .hours h2{
     font-size: 22px;
-  }
-
-  .location {
-    font-size: 18px;
   }
 
   .social {

@@ -12,6 +12,7 @@ const Social = () => (
     <a className="social-link" href="https://www.yelp.com/biz/yume-ga-arukara-cambridge-2">
       <Photo source="../../yelp.png" alt="Yelp Link" />
     </a>
+    <div className="email-address">yumegaarukara@gmail.com</div>
   </div>
 );
 
