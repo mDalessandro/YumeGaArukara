@@ -3,7 +3,6 @@
 /reports/
 /.idea/
 /.vscode/
-.nyc_output
 
 .env
 bundle-stats.json

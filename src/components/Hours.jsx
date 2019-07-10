@@ -1,16 +1,16 @@
 import React from 'react';
 
 const Hours = () => {
-  const justDinnerHours = '5 PM - 9 PM';
-  const lunchHours = '11 AM - 2 PM';
-  const dinnerHours = '5 PM - 9 PM';
+  const weekdayLunchHours = '12pm - 2pm';
+  const weekendLunchHours = '11am - 2pm';
+  const dinnerHours = '5pm - 9pm';
 
   return (
     <div className="hours">
       <h2>Hours</h2>
       <div id="Sunday" className="dateTime">
         <div className="day">Sunday</div>
-        <div className="time">Closed</div>
+        <div className="time">{weekendLunchHours}</div>
       </div>
       <br />
       <div id="Monday" className="dateTime">
@@ -20,31 +20,27 @@ const Hours = () => {
       <br />
       <div id="Tuesday" className="dateTime">
         <div className="day">Tuesday</div>
-        <div className="time">{justDinnerHours}</div>
+        <div className="time">{dinnerHours}</div>
       </div>
       <br />
       <div id="Wednesday" className="dateTime">
         <div className="day">Wednesday</div>
-        <div className="time">{justDinnerHours}</div>
+        <div className="time">{`${weekdayLunchHours} + ${dinnerHours}`}</div>
       </div>
       <br />
       <div id="Thursday" className="dateTime">
         <div className="day">Thursday</div>
-        <div className="time">{justDinnerHours}</div>
+        <div className="time">{`${weekdayLunchHours} + ${dinnerHours}`}</div>
       </div>
       <br />
       <div id="Friday" className="dateTime">
         <div className="day">Friday</div>
-        <div className="time">{lunchHours}</div>
-        <br />
-        <div className="time">{dinnerHours}</div>
+        <div className="time">{`${weekendLunchHours} + ${dinnerHours}`}</div>
       </div>
       <br />
       <div id="Saturday" className="dateTime">
         <div className="day">Saturday</div>
-        <div className="time">{lunchHours}</div>
-        <br />
-        <div className="time">{dinnerHours}</div>
+        <div className="time">{`${weekendLunchHours} + ${dinnerHours}`}</div>
       </div>
     </div>
   );
