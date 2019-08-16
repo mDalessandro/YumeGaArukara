@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Hours = () => {
-  const weekdayLunchHours = '12pm - 2pm';
-  const weekendLunchHours = '11am - 2pm';
+  const lunchHours = '11am - 2pm';
+  const sundayLunchHours = '11am - 3pm';
   const dinnerHours = '5pm - 9pm';
 
   return (
@@ -10,7 +10,7 @@ const Hours = () => {
       <h2>Hours</h2>
       <div id="Sunday" className="dateTime">
         <div className="day">Sunday</div>
-        <div className="time">{weekendLunchHours}</div>
+        <div className="time">{sundayLunchHours}</div>
       </div>
       <br />
       <div id="Monday" className="dateTime">
@@ -25,22 +25,22 @@ const Hours = () => {
       <br />
       <div id="Wednesday" className="dateTime">
         <div className="day">Wednesday</div>
-        <div className="time">{`${weekdayLunchHours} + ${dinnerHours}`}</div>
+        <div className="time">{`${lunchHours} + ${dinnerHours}`}</div>
       </div>
       <br />
       <div id="Thursday" className="dateTime">
         <div className="day">Thursday</div>
-        <div className="time">{`${weekdayLunchHours} + ${dinnerHours}`}</div>
+        <div className="time">{`${lunchHours} + ${dinnerHours}`}</div>
       </div>
       <br />
       <div id="Friday" className="dateTime">
         <div className="day">Friday</div>
-        <div className="time">{`${weekendLunchHours} + ${dinnerHours}`}</div>
+        <div className="time">{`${lunchHours} + ${dinnerHours}`}</div>
       </div>
       <br />
       <div id="Saturday" className="dateTime">
         <div className="day">Saturday</div>
-        <div className="time">{`${weekendLunchHours} + ${dinnerHours}`}</div>
+        <div className="time">{`${lunchHours} + ${dinnerHours}`}</div>
       </div>
     </div>
   );
