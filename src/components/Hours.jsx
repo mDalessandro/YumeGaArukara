@@ -15,7 +15,7 @@ const Hours = () => {
       <br />
       <div id="Monday" className="dateTime">
         <div className="day">Monday</div>
-        <div className="time">Closed</div>
+        <div className="time">{dinnerHours}</div>
       </div>
       <br />
       <div id="Tuesday" className="dateTime">
