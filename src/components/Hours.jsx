@@ -20,7 +20,7 @@ const Hours = () => {
       <br />
       <div id="Tuesday" className="dateTime">
         <div className="day">Tuesday</div>
-        <div className="time">{dinnerHours}</div>
+        <div className="time">{`${lunchHours} + ${dinnerHours}`}</div>
       </div>
       <br />
       <div id="Wednesday" className="dateTime">
