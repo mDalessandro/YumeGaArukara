@@ -89,6 +89,7 @@ body {
   position: relative;
   height: 40%;
   margin: 0 auto;
+  margin-top: -24px;
 }
 
 .logo img {
@@ -105,13 +106,17 @@ body {
 }
 
 .hours h2 {
-  margin-top: 0;
+  margin-top: -40px;
   line-height: 28px;
   font-size: 28px;
   border-bottom: 1px solid #dce0d8;
   margin-bottom: 10px;
   padding-bottom: 10px;
   font-weight: 400;
+}
+
+.lastOrderTime {
+  padding-bottom: 15px;
 }
 
 .dateTime {
@@ -143,15 +148,14 @@ body {
 
 .social {
   position: relative;
-  margin: 0 auto;
   height: 40px;
-  padding-top: 15px;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
 .social img {
   float: none;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 0 10px 10px;
 }
 
 .email-address {
@@ -188,7 +192,7 @@ body {
   }
 
   .hours {
-    max-width: 40%;
+    max-width: 60%;
     font-size: 14px;
   }
 
