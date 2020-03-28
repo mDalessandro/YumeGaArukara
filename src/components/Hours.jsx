@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Hours = () => {
-  const takeOutHours = '5pm - 9pm';
+  const takeOutHours = '4pm - 8pm';
 
   return (
     <div className="hours">
       <h2>Hours (Take-out only*)</h2>
       <span>* To order, please DM on Instagram (@yumegaarukara) or walk up.</span>
-      <div className="lastOrderTime">Last order at 8:50pm.</div>
+      <div className="lastOrderTime">Last order at 7:50pm.</div>
       <div id="Sunday" className="dateTime">
         <div className="day">Sunday</div>
         <div className="time">{takeOutHours}</div>
