@@ -96,16 +96,17 @@ body {
   float: none;
 }
 
-.hours {
+.hours-wrapper {
   position: relative;
   margin: 0 auto;
   padding: 30px 25px;
   padding-top: 0px;
   max-width: 60%;
   line-height: 1.8;
+  text-align: left;
 }
 
-.hours h2 {
+.hours-wrapper h2 {
   margin-top: -40px;
   line-height: 28px;
   font-size: 28px;
@@ -113,10 +114,17 @@ body {
   margin-bottom: 10px;
   padding-bottom: 10px;
   font-weight: 400;
+  text-align: center;
 }
 
-.lastOrderTime {
+.hours-subtitle {
   padding-bottom: 15px;
+}
+
+.hours {
+  margin:0 auto;
+  max-width: 50%;
+  min-width: 230px;
 }
 
 .dateTime {
@@ -191,7 +199,7 @@ body {
     height: 250px;
   }
 
-  .hours {
+  .hours-wrapper {
     max-width: 60%;
     font-size: 14px;
   }
@@ -219,13 +227,19 @@ body {
 }
 
 @media all and (max-width: 470px) {
-  .hours {
-    width: 75%;
-    max-width: 75%;
+  .hours-wrapper {
+    width: 80%;
+    max-width: 80%;
     line-height: 1.2;
   }
-  .hours h2{
+
+  .hours-wrapper h2 {
     font-size: 22px;
+  }
+
+  .hours {
+    margin:0 auto;
+    max-width: 70%;
   }
 
   .social {
