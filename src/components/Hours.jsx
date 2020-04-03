@@ -7,11 +7,16 @@ const Hours = () => {
     <div className="hours-wrapper">
       <h2>Hours (Take-out only*)</h2>
       <div className="hours-subtitle">
-        * Udon Pre-order: Begins daily at 9am at&nbsp;
-        <a href="https://tinyurl.com/YumeOrder" target="_blank" rel="noreferrer noopener">
-          tinyurl.com/YumeOrder
+        * Udon Pre-order: Begins daily at 9am on&nbsp;
+        <a
+          className="order-online"
+          href="https://souskasa.com/hosts/yume-ga-arukara"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Souskasa
         </a>
-        . Closes when we sell out. Last order at 7:50pm.
+        . Closes when we sell out.
       </div>
       <div className="hours">
         <div id="Sunday" className="dateTime">
