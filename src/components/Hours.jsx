@@ -16,7 +16,7 @@ const Hours = () => {
         >
           Souskasa
         </a>
-        . Closes when we sell out.
+        . Last order 30 minutes before close.
       </div>
       <div className="hours">
         <div id="Sunday" className="dateTime">
