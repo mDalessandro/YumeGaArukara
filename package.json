@@ -93,7 +93,7 @@
     "lodash-es": "^4.17.14",
     "mime-types": "^2.1.19",
     "minimist": "^1.2.0",
-    "node-fetch": "^2.2.0",
+    "node-fetch": "^2.6.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
