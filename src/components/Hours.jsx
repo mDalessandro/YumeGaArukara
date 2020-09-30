@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Hours = () => {
-  const takeOutHours = '3pm - 7pm';
+  const takeOutHours = '3pm - 7:45pm';
 
   return (
     <div className="hours-wrapper">
@@ -10,18 +10,18 @@ const Hours = () => {
         * Udon Pre-order: Begins daily at 9am on&nbsp;
         <a
           className="order-online"
-          href="https://souskasa.com/hosts/yume-ga-arukara"
+          href="https://www.toasttab.com/yumegaarukara"
           target="_blank"
           rel="noreferrer noopener"
         >
-          Souskasa
+          Toast
         </a>
         . Last order 30 minutes before close.
       </div>
       <div className="hours">
         <div id="Sunday" className="dateTime">
           <div className="day">Sunday</div>
-          <div className="time">11am - 3pm</div>
+          <div className="time">11am - 3:45pm</div>
         </div>
         <br />
         <div id="Monday" className="dateTime">
