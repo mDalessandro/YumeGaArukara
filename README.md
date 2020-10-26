@@ -8,8 +8,8 @@ When running locally, the app runs on [http://localhost:3000](http://localhost:3
 
 | CLI Command       | Description                                             |
 |-------------------|---------------------------------------------------------|
-|`yarn dev`         | Runs development mode. (source maps, etc...). The app will hit the GraphQL server defined in the `.env` file.            |
-|`yarn start`       | Runs production mode. (minified, obfuscated, cache busted, etc...). If deploying to a honeycomb, this will configure the application to run behind an API gateway (Zuul). The app will hit the GraphQL server behind Lux Gateway proxy. |
+|`yarn dev`         | Runs development mode. (source maps, etc...). |
+|`yarn start`       | Runs production mode. (minified, obfuscated, etc |
 |`yarn lint`        | Runs code lint with eslint.                             |
 |`yarn build:stats` | Runs [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) on [http://127.0.0.1:8888](http://127.0.0.1:8888), which provides an interactive treemap showing how much bundle space is taken by dependencies. |
 
