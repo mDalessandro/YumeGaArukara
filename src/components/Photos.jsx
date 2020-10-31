@@ -7,13 +7,18 @@ const Photos = ({ options }) => {
 
   return (
     <div className="photos">
-      <Photo source={option.props.src} alt={option.props.alt} />
+      <Photo source={option.src} alt={option.alt} />
     </div>
   );
 };
 
 Photos.propTypes = {
-  options: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string,
+      alt: PropTypes.string,
+    })
+  ).isRequired,
 };
 
 export default Photos;
