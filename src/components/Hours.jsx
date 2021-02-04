@@ -7,7 +7,7 @@ const Hours = () => {
     <div className="hours-wrapper">
       <h2>Hours (Take-out only*)</h2>
       <div className="hours-subtitle">
-        * Udon Pre-order: Begins daily at 9am on&nbsp;
+        * Udon Pre-order: Order up to 24 hours in advance at&nbsp;
         <a
           className="order-online"
           href="https://www.toasttab.com/yumegaarukara"
@@ -16,7 +16,7 @@ const Hours = () => {
         >
           Toast
         </a>
-        . Last order 30 minutes before close.
+        . Last order 15 minutes before close.
       </div>
       <div className="hours">
         <div id="Sunday" className="dateTime">
