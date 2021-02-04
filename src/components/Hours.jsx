@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Hours = () => {
-  const takeOutHours = '3pm - 7:45pm';
+  const takeOutHours = '4pm - 8:45pm';
 
   return (
     <div className="hours-wrapper">
