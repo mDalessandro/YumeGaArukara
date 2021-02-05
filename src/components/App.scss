@@ -32,7 +32,12 @@ body {
   line-height: 1.2rem;
 
   @include breakpoint(lg) {
+    display: flex;
+    flex-direction: column;
     flex-basis: 40%;
+    height: fit-content;
+    min-height: 100%;
+    padding-bottom: 32px;
     background: rgba(51, 51, 51, 0.9);
   }
 
@@ -40,6 +45,11 @@ body {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.5rem;
+
+    @include breakpoint(lg) {
+      font-size: 32px;
+      line-height: 1.8rem;
+    }
   }
 }
 
@@ -49,13 +59,19 @@ body {
   margin-top: -28px;
 
   @include breakpoint(lg) {
-    display: contents;
+    //display: contents;
     height: auto;
+    max-height: initial;
+    margin-top: -40px;
   }
 
   img {
     max-width: 100%;
     max-height: 100%;
+
+    @include breakpoint(lg) {
+      max-height: initial;
+    }
   }
 
 }
@@ -68,6 +84,10 @@ body {
 
   @include breakpoint(sm) {
     margin-top: -18px;
+  }
+
+  @include breakpoint(lg) {
+    margin-top: -28px;
   }
 }
 
@@ -103,14 +123,18 @@ body {
 
 .day {
   margin-right: 16px;
-}
 
-.time {
+  @include breakpoint(lg) {
+    margin-right: 32px;
+  }
 }
-
 
 .contactUs {
   margin-top: 16px;
+
+  @include breakpoint(lg) {
+    margin-top: 24px;
+  }
 
   .location {
     margin-top: 12px;
@@ -154,6 +178,10 @@ body {
   width: auto;
   height: auto;
   margin-top: 16px;
+
+  @include breakpoint(sm) {
+    margin-top: 28px;
+  }
 
   @include breakpoint(lg) {
     display: none;

@@ -14,8 +14,10 @@ const App = () => (
       <div className="logo">
         <img src="../../yumeJapaneseBlueLogo.png" alt="Yume Ga Arukara Japanese Logo" />
       </div>
-      <Hours />
-      <ContactUs />
+      <div>
+        <Hours />
+        <ContactUs />
+      </div>
     </Info>
     <Photos options={photoList} />
   </Content>
