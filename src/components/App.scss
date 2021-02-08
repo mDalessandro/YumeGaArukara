@@ -59,7 +59,6 @@ body {
   margin-top: -28px;
 
   @include breakpoint(lg) {
-    //display: contents;
     height: auto;
     max-height: initial;
     margin-top: -40px;
@@ -93,17 +92,29 @@ body {
 
 .order-online {
   margin-top: 16px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  padding: 8px;
   font-size: 20px;
-  color: #FFFFFF;
+  font-weight: 700;
+  background: #FFFFFF;
+  color: #333333;
+  text-decoration: none;
 
   &:hover {
-    text-decoration: none;
+    background: #333333;
+    color: #FFFFFF;
+  }
+
+  &:active {
+    background: #333333;
+    color: #FFFFFF;
   }
 }
 
 .hours-subtitle {
   max-width: 90%;
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 14px;
 
   @include breakpoint(sm) {
@@ -136,6 +147,18 @@ body {
     margin-top: 24px;
   }
 
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  .email {
+    color: #FFFFFF;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   .location {
     margin-top: 12px;
 
@@ -150,26 +173,17 @@ body {
     @include breakpoint(lg) {
       margin: 16px 0 4px;
     }
-  }
 
-  .socialMediaLink {
-    margin: 0 12px;
+    .socialMediaLink {
+      margin: 0 12px;
 
-    img {
-      height: 30px;
+      img {
+        height: 30px;
 
-      &:hover {
-        outline: 1px solid #FFFFFF;
+        &:hover {
+          outline: 1px solid #FFFFFF;
+        }
       }
-    }
-  }
-
-  .email {
-    margin-top: 14px;
-    color: #FFFFFF;
-
-    &:hover {
-      text-decoration: none;
     }
   }
 }

@@ -4,7 +4,10 @@ const aurukaraEmailAddress = 'yumegaarukara@gmail.com';
 
 const ContactUs = () => (
   <div className="contactUs">
-    <h2 className="contactUsHeading">Contact us</h2>
+    <h2>Contact Us</h2>
+    <a className="email" href={`mailto:${aurukaraEmailAddress}`}>
+      {aurukaraEmailAddress}
+    </a>
     <div className="location">
       <div>1815 Massachusetts Avenue</div>
       <div>Cambridge, MA 02140</div>
@@ -20,9 +23,6 @@ const ContactUs = () => (
         <img src="../../yelp.png" alt="Yelp Link" />
       </a>
     </div>
-    <a className="email" href={`mailto:${aurukaraEmailAddress}`}>
-      {aurukaraEmailAddress}
-    </a>
   </div>
 );
 

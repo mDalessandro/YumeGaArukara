@@ -5,7 +5,7 @@ const Hours = () => {
 
   return (
     <div className="hours-wrapper">
-      <h2>Take-out Hours</h2>
+      <h2>Take-Out Hours</h2>
       <a
         className="order-online"
         href="https://www.toasttab.com/yumegaarukara"
