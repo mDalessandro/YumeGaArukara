@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Hours = () => {
-  const dinnerTakeOutHours = '4pm - 8:30pm';
+  const dinnerTakeOutHours = '3pm - 7:45pm';
 
   return (
     <div className="hours-wrapper">
@@ -21,7 +21,7 @@ const Hours = () => {
       <div className="hours">
         <div id="Sunday" className="dateTime">
           <div className="day">Sunday</div>
-          <div>11am - 2:30pm</div>
+          <div>11am - 2:45pm</div>
         </div>
         <div id="Monday" className="dateTime">
           <div className="day">Monday</div>
@@ -41,11 +41,11 @@ const Hours = () => {
         </div>
         <div id="Friday" className="dateTime">
           <div className="day">Friday</div>
-          <div>11am - 2pm, {dinnerTakeOutHours}</div>
+          <div>{dinnerTakeOutHours}</div>
         </div>
         <div id="Saturday" className="dateTime">
           <div className="day">Saturday</div>
-          <div>11am - 2pm, {dinnerTakeOutHours}</div>
+          <div>{dinnerTakeOutHours}</div>
         </div>
       </div>
     </div>
